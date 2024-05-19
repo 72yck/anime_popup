@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <link href="style.css" rel="stylesheet" >
+    
+</head>
+<body>
+    <div class="container">
+        <div class="anime">
+            <!-- <ul>
+                <li><button type="button" class="btn_naruto" onclick="openPopup()" >Naruto</button></li>
+                <li><button type="button" class="btn_naruto" onclick="openPopup()" >Demons Slayer</button></li>
+            </ul> -->
+            <form>
+                <button type="button" class="btn_naruto" onclick="openPopup()" >Naruto</button>
+                <button type="button" class="btn_naruto" onclick="openPopup2()" >Demons Slayer</button>
+            </form>
+            
+            <div class="popup" id="popup">
+                <img src="naruto.jpg" >
+                <h2>Naruto</h2>
+                <p>It is a beautyfull anime to start with...!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+            <div class="popup2" id="popup2">
+                <img src="demons_slayer.jpg" >
+                <h2>Demons Slayer</h2>
+                <p>It is a beautyfull anime to start with...!</p>
+                <button type="button" onclick="closePopup2()">OK</button>
+            </div>
+            
+        </div>
+        
+
+    </div>
+    <script>
+//         const bt=document.querySelector(".btn_naruto");
+//         bt.addEventListener("click",()=>{
+//     console.log("23");
+    
+// })
+let popup=document.getElementById("popup");
+let popup2=document.getElementById("popup2");
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+    function openPopup2(){
+        popup2.classList.add("open-popup");
+    }
+    function closePopup2(){
+        popup2.classList.remove("open-popup");
+    }
+    </script>
+</body>
+
+</html>
